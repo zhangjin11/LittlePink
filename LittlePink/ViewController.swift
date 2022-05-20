@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         print(mystr)
         print(newStr)
         
-    
+        view.backgroundColor = .systemBlue
         
     }
 
@@ -66,6 +66,11 @@ class ViewController: UIViewController {
      tabBar.tintColor = .systemRed  设置所有tabbar图片和字的颜色为统一的，但下面的自定义的图片
      。图片所有的 在 Assets里面要设置成 original 模式，不能用default，在tabbar和 navigate里面的图片默认是 temeplate模板模式，
       
+     
+       view.backgroundColor = .systemBlue 表示他会自动适配深色或者浅色模式
+     
+     
+     
      
      */
     
