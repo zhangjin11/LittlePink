@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		5213883428371E410017C530 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5213883328371E410017C530 /* AppDelegate.swift */; };
 		5213883628371E410017C530 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5213883528371E410017C530 /* SceneDelegate.swift */; };
-		5213883828371E410017C530 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5213883728371E410017C530 /* ViewController.swift */; };
 		5213883B28371E410017C530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5213883928371E410017C530 /* Main.storyboard */; };
 		5213883E28371E410017C530 /* LittlePink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5213883C28371E410017C530 /* LittlePink.xcdatamodeld */; };
 		5213884028371E430017C530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5213883F28371E430017C530 /* Assets.xcassets */; };
 		5213884328371E430017C530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5213884128371E430017C530 /* LaunchScreen.storyboard */; };
+		5213884B28371EB70017C530 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5213884A28371EB70017C530 /* ViewController.swift */; };
+		5213884D28371ECF0017C530 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5213884C28371ECF0017C530 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5213883028371E400017C530 /* LittlePink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittlePink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5213883328371E410017C530 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5213883528371E410017C530 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5213883728371E410017C530 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5213883A28371E410017C530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5213883D28371E410017C530 /* LittlePink.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LittlePink.xcdatamodel; sourceTree = "<group>"; };
 		5213883F28371E430017C530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5213884228371E430017C530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5213884428371E430017C530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5213884A28371EB70017C530 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5213884C28371ECF0017C530 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		5213882728371E400017C530 = {
 			isa = PBXGroup;
 			children = (
+				5213884C28371ECF0017C530 /* .gitignore */,
 				5213883228371E400017C530 /* LittlePink */,
 				5213883128371E400017C530 /* Products */,
 			);
@@ -60,7 +63,7 @@
 			children = (
 				5213883328371E410017C530 /* AppDelegate.swift */,
 				5213883528371E410017C530 /* SceneDelegate.swift */,
-				5213883728371E410017C530 /* ViewController.swift */,
+				5213884A28371EB70017C530 /* ViewController.swift */,
 				5213883928371E410017C530 /* Main.storyboard */,
 				5213883F28371E430017C530 /* Assets.xcassets */,
 				5213884128371E430017C530 /* LaunchScreen.storyboard */,
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5213884D28371ECF0017C530 /* .gitignore in Resources */,
 				5213884328371E430017C530 /* LaunchScreen.storyboard in Resources */,
 				5213884028371E430017C530 /* Assets.xcassets in Resources */,
 				5213883B28371E410017C530 /* Main.storyboard in Resources */,
@@ -141,9 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5213883828371E410017C530 /* ViewController.swift in Sources */,
 				5213883428371E410017C530 /* AppDelegate.swift in Sources */,
 				5213883628371E410017C530 /* SceneDelegate.swift in Sources */,
+				5213884B28371EB70017C530 /* ViewController.swift in Sources */,
 				5213883E28371E410017C530 /* LittlePink.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,11 +300,13 @@
 				DEVELOPMENT_TEAM = 63GE6CFK95;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LittlePink/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "小粉书";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +316,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -324,11 +330,13 @@
 				DEVELOPMENT_TEAM = 63GE6CFK95;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LittlePink/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "小粉书";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,7 +346,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
