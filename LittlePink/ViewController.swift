@@ -22,8 +22,6 @@ class ViewController: UIViewController {
         print("我的第一次提交这个xcode")
         view.backgroundColor = .systemTeal
         print("我的第二次提交这个xcode")
-        print("我的第三次提交这个xcode")
-        
         let myImage:UIImage = UIImage(named: "rrtt.jpg")!
         
         let myheight:CGFloat = myImage.size.height
