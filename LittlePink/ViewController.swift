@@ -67,7 +67,21 @@ class ViewController: UIViewController {
      。图片所有的 在 Assets里面要设置成 original 模式，不能用default，在tabbar和 navigate里面的图片默认是 temeplate模板模式，
       
      
-       view.backgroundColor = .systemBlue 表示他会自动适配深色或者浅色模式
+       view.backgroundColor = .systemBlue system样式的颜色表示他会自动适配深色或者浅色模式
+     
+     
+     sudo gem install cocoapods 安装pod  sudo表示以管理员权限运行
+     pod init 创建podfile文件
+     source 'https://github.com/CocoaPods/Specs.git'  
+      
+     pod repo update 更新本地pod项目的索引包
+     
+     
+     
+     
+     小飞机 终端每次打开都要翻墙
+     export http_proxy=http://127.0.0.1:1087
+     export https_proxy=http://127.0.0.1:1087
      
      
      
