@@ -15,6 +15,11 @@
 		5213884328371E430017C530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5213884128371E430017C530 /* LaunchScreen.storyboard */; };
 		5213884B28371EB70017C530 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5213884A28371EB70017C530 /* ViewController.swift */; };
 		5213884D28371ECF0017C530 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5213884C28371ECF0017C530 /* .gitignore */; };
+		52922243283E325D00824DBE /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52922242283E325D00824DBE /* HomeVC.swift */; };
+		52922245283F05AD00824DBE /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52922244283F05AD00824DBE /* FollowVC.swift */; };
+		52922247283F05C000824DBE /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52922246283F05C000824DBE /* DiscoveryVC.swift */; };
+		52922249283F05CE00824DBE /* NerbyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52922248283F05CE00824DBE /* NerbyVC.swift */; };
+		5292224B283F067400824DBE /* ConstantFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292224A283F067400824DBE /* ConstantFile.swift */; };
 		B23B86C6AB830EF5DDE5F657 /* Pods_LittlePink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368818706041C5B4766C8405 /* Pods_LittlePink.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +35,11 @@
 		5213884428371E430017C530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5213884A28371EB70017C530 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5213884C28371ECF0017C530 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		52922242283E325D00824DBE /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		52922244283F05AD00824DBE /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
+		52922246283F05C000824DBE /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
+		52922248283F05CE00824DBE /* NerbyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NerbyVC.swift; sourceTree = "<group>"; };
+		5292224A283F067400824DBE /* ConstantFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantFile.swift; sourceTree = "<group>"; };
 		B5558EBA2C30C8AA415C6A9D /* Pods-LittlePink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.debug.xcconfig"; sourceTree = "<group>"; };
 		E3285E1FBDE764D7CB92AA02 /* Pods-LittlePink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.release.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +81,8 @@
 				5213883328371E410017C530 /* AppDelegate.swift */,
 				5213883528371E410017C530 /* SceneDelegate.swift */,
 				5213884A28371EB70017C530 /* ViewController.swift */,
+				5292224A283F067400824DBE /* ConstantFile.swift */,
+				5292224C283F07C500824DBE /* Home */,
 				5213883928371E410017C530 /* Main.storyboard */,
 				5213883F28371E430017C530 /* Assets.xcassets */,
 				5213884128371E430017C530 /* LaunchScreen.storyboard */,
@@ -78,6 +90,17 @@
 				5213883C28371E410017C530 /* LittlePink.xcdatamodeld */,
 			);
 			path = LittlePink;
+			sourceTree = "<group>";
+		};
+		5292224C283F07C500824DBE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				52922242283E325D00824DBE /* HomeVC.swift */,
+				52922244283F05AD00824DBE /* FollowVC.swift */,
+				52922248283F05CE00824DBE /* NerbyVC.swift */,
+				52922246283F05C000824DBE /* DiscoveryVC.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		6135961E96709D01D61558F0 /* Frameworks */ = {
@@ -94,7 +117,6 @@
 				B5558EBA2C30C8AA415C6A9D /* Pods-LittlePink.debug.xcconfig */,
 				E3285E1FBDE764D7CB92AA02 /* Pods-LittlePink.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -215,9 +237,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5213883428371E410017C530 /* AppDelegate.swift in Sources */,
+				52922249283F05CE00824DBE /* NerbyVC.swift in Sources */,
+				52922243283E325D00824DBE /* HomeVC.swift in Sources */,
 				5213883628371E410017C530 /* SceneDelegate.swift in Sources */,
 				5213884B28371EB70017C530 /* ViewController.swift in Sources */,
+				52922247283F05C000824DBE /* DiscoveryVC.swift in Sources */,
 				5213883E28371E410017C530 /* LittlePink.xcdatamodeld in Sources */,
+				52922245283F05AD00824DBE /* FollowVC.swift in Sources */,
+				5292224B283F067400824DBE /* ConstantFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

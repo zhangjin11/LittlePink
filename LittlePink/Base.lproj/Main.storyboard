@@ -61,33 +61,67 @@
         <!--首页-->
         <scene sceneID="8Pj-L7-M8M">
             <objects>
-                <viewController id="oo8-UG-X4P" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="oo8-UG-X4P" customClass="HomeVC" customModule="LittlePink" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hZJ-ha-qg8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zb7-JB-JTb">
-                                <rect key="frame" x="147" y="404" width="82" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="我的按钮"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="水电费发斯蒂芬斯蒂芬地方" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmu-Zb-HPo">
-                                <rect key="frame" x="154" y="242" width="208" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gfX-iN-djp" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.66274509800000003" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="114-G7-7Mv"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xsh-cl-44i">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="100" minY="0.0" maxX="100" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9PI-Vb-vvJ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="OyW-st-2eq"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="SuR-wE-SqG"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6zi-DJ-Lxh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="9PI-Vb-vvJ" secondAttribute="bottom" id="DBS-pl-rOn"/>
+                            <constraint firstItem="gfX-iN-djp" firstAttribute="top" secondItem="6zi-DJ-Lxh" secondAttribute="top" id="LF1-ec-g6s"/>
+                            <constraint firstItem="gfX-iN-djp" firstAttribute="leading" secondItem="6zi-DJ-Lxh" secondAttribute="leading" id="S5C-gn-wYx"/>
+                            <constraint firstItem="9PI-Vb-vvJ" firstAttribute="leading" secondItem="6zi-DJ-Lxh" secondAttribute="leading" id="Y9j-hg-F8A"/>
+                            <constraint firstItem="9PI-Vb-vvJ" firstAttribute="trailing" secondItem="6zi-DJ-Lxh" secondAttribute="trailing" id="ZPf-W8-nZG"/>
+                            <constraint firstItem="6zi-DJ-Lxh" firstAttribute="trailing" secondItem="gfX-iN-djp" secondAttribute="trailing" id="dPz-dd-xNy"/>
+                            <constraint firstItem="9PI-Vb-vvJ" firstAttribute="top" secondItem="gfX-iN-djp" secondAttribute="bottom" id="zQm-Hw-h22"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="首页" image="house" catalog="system" id="uZg-7O-uDe"/>
+                    <connections>
+                        <outlet property="buttonBarView" destination="gfX-iN-djp" id="w7A-Lx-OaL"/>
+                        <outlet property="containerView" destination="9PI-Vb-vvJ" id="Ees-87-1sO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTf-qx-BkK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="161" y="-546"/>
+            <point key="canvasLocation" x="160.86956521739131" y="-546.42857142857144"/>
+        </scene>
+        <!--FollowVC-->
+        <scene sceneID="39m-Wn-LI6">
+            <objects>
+                <viewController storyboardIdentifier="FollowVC" id="99S-70-vHU" customClass="FollowVC" customModule="LittlePink" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mjZ-GW-7po">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="neg-4u-2z0"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gv3-7g-tH0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="793" y="-567"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="F8e-iC-khh">
@@ -161,6 +195,59 @@
             </objects>
             <point key="canvasLocation" x="-662" y="2003"/>
         </scene>
+        <!--DiscoveryVC-->
+        <scene sceneID="Kcv-Rq-1Wd">
+            <objects>
+                <viewController storyboardIdentifier="DiscoveryVC" id="wst-iq-mig" customClass="DiscoveryVC" customModule="LittlePink" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eZu-uq-R7s">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="y3K-i3-g8G">
+                                <rect key="frame" x="85.5" y="425" width="243" height="46"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三大法宝健康南京卡少女看上你" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IO-Fr-MjP">
+                                        <rect key="frame" x="0.0" y="0.0" width="243" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="说的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXg-NP-Ie6">
+                                        <rect key="frame" x="104" y="25.5" width="35" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QcW-sy-est"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="y3K-i3-g8G" firstAttribute="centerY" secondItem="eZu-uq-R7s" secondAttribute="centerY" id="3Yk-Zu-Gd2"/>
+                            <constraint firstItem="y3K-i3-g8G" firstAttribute="centerX" secondItem="eZu-uq-R7s" secondAttribute="centerX" id="CDp-It-a24"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0zl-yo-SRP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2087" y="-575"/>
+        </scene>
+        <!--NerbyVC-->
+        <scene sceneID="S85-xk-sbp">
+            <objects>
+                <viewController storyboardIdentifier="NerbyVC" id="tfm-DM-kip" customClass="NerbyVC" customModule="LittlePink" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nqk-MI-97f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hdD-P8-97l"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4T3-jr-TQt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1439" y="-567"/>
+        </scene>
     </scenes>
     <color key="tintColor" name="mainColor"/>
     <resources>
@@ -175,6 +262,12 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
